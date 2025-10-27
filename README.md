@@ -14,7 +14,6 @@ A simple and responsive **Todo Application** built with **React + Vite**, featur
 ✅ Add, edit, and delete tasks  
 ✅ Mark tasks as complete/incomplete  
 ✅ Filter todos by **All / Active / Completed**  
-✅ Real-time **search bar** to find tasks instantly  
 ✅ Display of tasks left to complete  
 ✅ Persistent storage using **localStorage**  
 ✅ Fast build with **Vite** and deployed on **Netlify**  
@@ -51,7 +50,6 @@ todo-react/
 ## 📸 Preview
 *![TodoApp](<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/928ce7b7-cafd-4e81-bde3-ee8d52cda71b" />
 )*  
-You can upload an image to GitHub and paste its link like this:
 
 ---
 
