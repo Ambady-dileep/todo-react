@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #6b83ed 0%, #6a5091 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Header */
+.app h1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 32px 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Input Section */
+.input-section {
+  padding: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-section input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.input-section button {
+  padding: 14px 28px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.input-section button:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.input-section button:active {
+  transform: translateY(0);
+}
+
+/* Filters */
+.filters {
+  padding: 0 24px 24px 24px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background: #f3f4f6;
+  color: #374151;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filters button:hover {
+  background: #e5e7eb;
+}
+
+.filters button:active,
+.filters button.active {
+  background: #667eea;
+  color: white;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Todo List */
+.app ul {
+  list-style: none;
+  padding: 0 24px;
+  margin: 0;
+}
+
+.app li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: all 0.3s;
+}
+
+.app li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Checkbox */
+.app li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+/* Todo Text */
+.app li span {
+  flex: 1;
+  font-size: 16px;
+  color: #1f2937;
+  word-break: break-word;
+}
+
+/* Edit Input */
+.app li input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #a78bfa;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.app li input[type="text"]:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Buttons in Todo Item */
+.app li button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.app li button:nth-of-type(1) {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.app li button:nth-of-type(1):hover {
+  background: #bfdbfe;
+}
+
+.app li button:nth-of-type(2) {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.app li button:nth-of-type(2):hover {
+  background: #fecaca;
+}
+
+/* Save and Cancel buttons when editing */
+.app li input[type="text"] ~ button:nth-of-type(1) {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.app li input[type="text"] ~ button:nth-of-type(1):hover {
+  background: #a7f3d0;
+}
+
+.app li input[type="text"] ~ button:nth-of-type(2) {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.app li input[type="text"] ~ button:nth-of-type(2):hover {
+  background: #d1d5db;
+}
+
+/* Clear Completed Button */
+.app > button {
+  width: calc(100% - 48px);
+  margin: 24px;
+  padding: 14px;
+  background: #fee2e2;
+  color: #991b1b;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.app > button:hover {
+  background: #fecaca;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .app {
+    margin: 20px auto;
+    border-radius: 12px;
+  }
+
+  .app h1 {
+    font-size: 2rem;
+    padding: 24px 16px;
+  }
+
+  .input-section {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .input-section button {
+    width: 100%;
+  }
+
+  .filters {
+    padding: 0 16px 16px 16px;
+  }
+
+  .filters button {
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .app ul {
+    padding: 0 16px;
+  }
+
+  .app li {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .app li span {
+    width: 100%;
+    order: 2;
+  }
+
+  .app li input[type="checkbox"] {
+    order: 1;
+  }
+
+  .app li button {
+    order: 3;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .app li input[type="text"] {
+    width: 100%;
+    order: 1;
+  }
+
+  .app > button {
+    width: calc(100% - 32px);
+    margin: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .app h1 {
+    font-size: 1.75rem;
+  }
+
+  .filters button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

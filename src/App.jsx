@@ -1,3 +1,4 @@
+import './App.css';
 import { useState, useEffect } from "react";
 import TodoInput from "./components/TodoInput.jsx"
 import TodoItem from "./components/TodoItem.jsx"
