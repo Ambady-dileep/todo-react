@@ -1,4 +1,4 @@
-# 📝 Todo App – React + Vite
+<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/6e8a5833-9ac7-4991-a2b1-154488635835" /># 📝 Todo App – React + Vite
 
 A simple and responsive **Todo Application** built with **React + Vite**, featuring real-time search, filters, and persistent data storage using localStorage.
 
@@ -49,7 +49,8 @@ todo-react/
 ---
 
 ## 📸 Preview
-*![TodoApp](assets/image.png)*  
+*![TodoApp](<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/928ce7b7-cafd-4e81-bde3-ee8d52cda71b" />
+)*  
 You can upload an image to GitHub and paste its link like this:
 
 ---
