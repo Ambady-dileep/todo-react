@@ -69,7 +69,6 @@ Through this project, I learned:
 
 - Add user authentication  
 - Connect with a **Django REST API backend**  
-- Introduce **Dark / Light Mode** toggle  
 - Replace localStorage with a **database** (MongoDB / PostgreSQL)  
 - Enhance styling with Tailwind or Material UI  
 
