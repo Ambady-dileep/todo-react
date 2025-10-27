@@ -1,4 +1,4 @@
-# 📝 Todo App – React + Vitehttps://www.onlinegdb.com/online_python_compiler
+# 📝 Todo App – React + Vite
 
 A simple and responsive **Todo Application** built with **React + Vite**, featuring real-time search, filters, and persistent data storage using localStorage.
 
@@ -49,7 +49,7 @@ todo-react/
 ---
 
 ## 📸 Preview
-*![TodoApp](image.png)*  
+*![TodoApp](assets/image.png)*  
 You can upload an image to GitHub and paste its link like this:
 
 ---
