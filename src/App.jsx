@@ -1,11 +1,12 @@
 import './App.css';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import TodoInput from "./components/TodoInput.jsx"
 import TodoItem from "./components/TodoItem.jsx"
 
 function App(){
   const [todos,setTodos] = useState([]);
   const [filter,setFilter] = useState(["all"]);
+  const isFirstLoad = useRef(true);
 
   // Load todos only once on startup
   useEffect(() => {
@@ -20,11 +21,12 @@ function App(){
     }
   }, []);
 
-  // Save todos every time they change — but only if not empty
-  useEffect(() => {
-    if (todos.length > 0) {
-      localStorage.setItem("todos", JSON.stringify(todos));
+useEffect(() => {
+    if (isFirstLoad.current) {
+      isFirstLoad.current = false;
+      return; 
     }
+    localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
 
